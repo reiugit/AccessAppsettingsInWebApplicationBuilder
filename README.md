@@ -1,4 +1,4 @@
-# AccessAppsettingsInWebApplicationBuilder
+# Access appsettings in WebApplicationBuilder
 
 Settings of appsettings.json etc. can already be accessed before building the app.
 
