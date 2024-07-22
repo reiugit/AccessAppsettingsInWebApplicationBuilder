@@ -11,4 +11,6 @@ Settings of appsettings.json etc. can already be accessed before building the ap
   //...use settings for configuring services etc.
   
   var app = builder.Build();
+
+  ...
 </pre>
