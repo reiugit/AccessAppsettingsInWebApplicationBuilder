@@ -2,8 +2,8 @@
 
 Settings of appsettings.json etc. can already be accessed before building the app.
 
-1. Access settings via builder.Configuration
-2. Configure services using these settings
+1. Access settings via WebApplicationBuilder.Configuration.
+2. Configure services using these settings.
 
 <pre>
   var builder = WebApplication.CreateBuilder(args);
