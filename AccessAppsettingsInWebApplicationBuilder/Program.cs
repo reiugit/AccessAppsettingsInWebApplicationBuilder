@@ -2,11 +2,11 @@ using AccessAppsettingsInWebApplicationBuilder.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Settings of appsettings.json etc. can already
-//be accessed here before building the app.
+// 1.) Access settings via builder.Configuration
 var settingForSampleService = builder.Configuration
     .GetValue<string>("Settings:SettingForSampleService");
 
+// 2.) Configure services using these settings
 builder.Services.AddSingleton<ISampleService>(new SampleService
 {
     SettingValue = settingForSampleService,
